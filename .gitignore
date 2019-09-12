@@ -1,6 +1,7 @@
 
 
 Udacity/FullStackFoundation/__pycache__/
+Udacity/FullStackFoundation/.vscode/
 *.db
 
 # Byte-compiled / optimized / DLL files

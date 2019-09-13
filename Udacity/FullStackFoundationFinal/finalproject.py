@@ -22,29 +22,30 @@ def AddNewRest():
 
 @app.route('/restaurant/<int:rest_id>/edit')
 def EditRest(rest_id):
-    return 'edit restaurant {}'.format(rest_id)
+    return render_template('editrestaurant.html',restaurant = restaurant)
 
 @app.route('/restaurant/<int:rest_id>/delete')
 def DeleteRest(rest_id):
-    return 'delete restaurant {}'.format(rest_id)
+    return render_template('deleterestaurant.html',restaurant = restaurant)
+
 
 @app.route('/restaurant/<int:rest_id>/menu')
 @app.route('/restaurant/<int:rest_id>')
 def VeiwMenus(rest_id):
-    return 'menus for restaurant {}'.format(rest_id)
+    return render_template('menu.html',rest_id=rest_id,menuitems=menu_items)
 
 
 @app.route('/restaurant/<int:rest_id>/menu/new')
 def AddMenu(rest_id):
-    return 'create a menu for restaurant {}'.format(rest_id)
+    return render_template('newmenuitem.html')
 
-@app.route('/restaurant/<int:rest_id>/menu/edit')
-def EditMenu(rest_id):
-    return 'edit a menu for restaurant {}'.format(rest_id)
+@app.route('/restaurant/<int:rest_id>/menu/<int:menu_id>/edit')
+def EditMenu(rest_id,menu_id):
+    return render_template('editmenuitem.html',menuitem=menu_item)
 
-@app.route('/restaurant/<int:rest_id>/menu/delete')
-def DeleteMenu(rest_id):
-    return 'delete a menu for restaurant {}'.format(rest_id)
+@app.route('/restaurant/<int:rest_id>/menu/<int:menu_id>/delete')
+def DeleteMenu(rest_id,menu_id):
+    return render_template('deletemenuitem.html',menuitem = menu_item)
 
 
 if __name__ == '__main__':

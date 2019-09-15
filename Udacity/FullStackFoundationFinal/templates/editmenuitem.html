@@ -10,7 +10,7 @@
 
     <h1>Edit a menuitem</h1>
 
-<form action="#" method="post">
+<form action="{{url_for('EditMenu',rest_id=menuitem.restaurant_id,menu_id=menuitem.id)}}" method="post">
 
 <input type="text" name="name" id="" placeholder="{{menuitem.name}}">
 <input type="submit" value="Edit">

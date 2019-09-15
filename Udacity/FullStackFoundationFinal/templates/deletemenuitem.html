@@ -8,11 +8,11 @@
 </head>
 <body>
 
-    <h1>delete a new menuitem</h1>
+    <h1>delete a menuitem</h1>
 
     <h2>Are you sure to delete {{menuitem.name}}</h2>
 
-<form action="#" method="post">
+<form action="{{url_for('DeleteMenu',rest_id = menuitem.restaurant_id, menu_id = menuitem.id)}}" method="post">
 
 
 <input type="submit" value="Delete">

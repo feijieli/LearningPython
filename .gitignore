@@ -1,4 +1,11 @@
 
+flask-tutorial/venv/
+
+flask-tutorial/.vscode/
+
+
+flask-tutorial/instance/
+
 
 Udacity/FullStackFoundation/__pycache__/
 Udacity/FullStackFoundation/.vscode/

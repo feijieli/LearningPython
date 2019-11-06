@@ -1,4 +1,10 @@
 
+FlaskWebDevelopment/venv/
+
+FlaskWebDevelopment/.vscode/
+FlaskWebDevelopment/__pycache__
+*.sqlite
+
 flask-tutorial/venv/
 
 flask-tutorial/.vscode/

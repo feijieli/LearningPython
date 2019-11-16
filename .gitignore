@@ -17,6 +17,11 @@ Udacity/FullStackFoundation/__pycache__/
 Udacity/FullStackFoundation/.vscode/
 *.db
 
+
+Udacity/RestfulAPI/venv
+Udacity/RestfulAPI/.vscode
+Udacity/RestfulAPI/__pycache__
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

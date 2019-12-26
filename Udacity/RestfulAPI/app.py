@@ -35,6 +35,11 @@ def get_auth_token():
     return jsonify({'token': token.decode('ascii')})
 
 
+@app.route('/')
+
+def index():
+    return jsonify({'token': 'home'})
+
 @app.route('/users', methods = ['POST'])
 def new_user():
     username = request.json.get('username')

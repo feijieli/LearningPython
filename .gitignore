@@ -1,15 +1,12 @@
 
-FlaskWebDevelopment/venv/
-
-FlaskWebDevelopment/.vscode/
-FlaskWebDevelopment/__pycache__
+flasky/venv/
+flasky/.vscode/
+flasky/__pycache__
+flasky/migrations
 *.sqlite
 
 flask-tutorial/venv/
-
 flask-tutorial/.vscode/
-
-
 flask-tutorial/instance/
 
 
@@ -21,6 +18,7 @@ Udacity/FullStackFoundation/.vscode/
 Udacity/RestfulAPI/venv
 Udacity/RestfulAPI/.vscode
 Udacity/RestfulAPI/__pycache__
+Udacity/RestfulAPI/venvlinux/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -126,3 +124,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+

@@ -12,6 +12,9 @@ class Config:
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
     FLASKY_MAIL_SENDER = 'Flasky Admin<58258338@qq.com>'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    FLASKY_POSTS_PER_PAGE = 20
+    FLASKY_FOLLOWERS_PER_PAGE = 10
+    SQLALCHEMY_ECHO = True
 
     @staticmethod
     def init_app(app):
@@ -33,6 +36,5 @@ config = {
     'testing': TestingConfig,
     'production': ProductionConfig,
     'default': DevelopmentConfig
-
 }
 
